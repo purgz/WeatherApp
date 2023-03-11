@@ -1,0 +1,72 @@
+
+
+*{
+    box-sizing: border-box;
+    font-family: "courier new";
+    font-size: 30px;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer{
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+}
+
+footer > a{
+    transition: ease-in-out 300ms;
+    display: flex;
+    align-items: center;
+}
+
+footer > a:hover{
+    transform: rotate(360deg);
+}
+
+header{
+    display: flex;
+    padding-top: 20px;
+    align-items: center;
+    gap: 20px;
+    padding-left: 30px;
+}
+header>h1{
+    font-size: 40px;
+}
+
+#content{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    
+}
+
+#enter-location{
+    width: 500px;
+    font-size: medium;
+}
+
+#location-form{
+    display: flex;   
+}
+
+#weather-icon{
+    max-width: 70px;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
