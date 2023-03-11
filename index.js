@@ -39,9 +39,17 @@ async function getLocation(){
 }
 
 async function getCityName(){
-    const response = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${localLat}&lon=${localLon}&appid=f7555cc5afd733fa2e73dee02f9ca7b2`)
-    const locationData = await response.json();
-    return locationData[0].name;
+    try{
+        const response = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${localLat}&lon=${localLon}&appid=f7555cc5afd733fa2e73dee02f9ca7b2`,
+        {
+            mode:"cors"
+        })
+        const locationData = await response.json();
+        return locationData[0].name;
+    }catch(error){
+        console.log(error);
+    }
+
 }
 
 const localWeatherBtn = document.querySelector("#use-local");
