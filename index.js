@@ -40,7 +40,7 @@ async function getLocation(){
 
 async function getCityName(){
     try{
-        const response = await fetch(`http://api.openweathermap.org/geo/1.0/reverse?lat=${localLat}&lon=${localLon}&appid=f7555cc5afd733fa2e73dee02f9ca7b2`,
+        const response = await fetch(`https://api.openweathermap.org/geo/1.0/reverse?lat=${localLat}&lon=${localLon}&appid=f7555cc5afd733fa2e73dee02f9ca7b2`,
         {
             mode:"cors"
         })
